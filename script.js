@@ -8,7 +8,7 @@
   const CONTACT = {
     email: "sales@mmexportbrokerage.com",
     whatsapp: "5492614606949", // sin +, sin espacios
-    whatsappLabel: "+54 9 261 000 0000",
+    whatsappLabel: "+54 9 261 460 6949",
   };
 
   // Actualiza cualquier link placeholder si existe
