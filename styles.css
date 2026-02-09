@@ -189,3 +189,10 @@ body {
 .nav a span { display: inline-block; }
 .nav a span + span { margin-left: 6px; }
 
+/* polish */
+.brand__name { font-size: 14px; letter-spacing: .2px; }
+.brand__tag { max-width: 240px; }
+.top { gap: 12px; }
+.nav { gap: 6px; }
+.nav a { font-size: 12px; padding: 6px 10px; border: 1px solid transparent; }
+.nav a:hover { border-color: #eee; }
