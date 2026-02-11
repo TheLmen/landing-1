@@ -1,0 +1,74 @@
+/* ══════════════════════════════════════════════
+   MM Export Brokerage — Additional Styles
+   Form Validation & Notifications
+   ══════════════════════════════════════════════ */
+
+/* ══ FORM VALIDATION ══ */
+.form__error {
+  font-size: var(--fs-xs);
+  color: #dc2626;
+  margin-top: 4px;
+  display: block;
+}
+
+.form__input--error,
+.form__select--error {
+  border-color: #dc2626 !important;
+  background-color: #fef2f2;
+}
+
+.form__input--error:focus,
+.form__select--error:focus {
+  border-color: #dc2626 !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+/* ══ NOTIFICATIONS ══ */
+.notification {
+  position: fixed;
+  top: 90px;
+  right: 24px;
+  z-index: 1000;
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15), 0 2px 8px rgba(0,0,0,0.1);
+  transform: translateX(calc(100% + 24px));
+  transition: transform 0.3s var(--ease);
+  max-width: 320px;
+}
+
+.notification--show {
+  transform: translateX(0);
+}
+
+.notification--success {
+  background: #10b981;
+  color: #fff;
+}
+
+.notification--error {
+  background: #dc2626;
+  color: #fff;
+}
+
+.notification--info {
+  background: var(--c-text);
+  color: #fff;
+}
+
+/* ══ BUTTON DISABLED STATE ══ */
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ══ MOBILE RESPONSIVE ══ */
+@media (max-width: 640px) {
+  .notification {
+    left: 16px;
+    right: 16px;
+    max-width: none;
+  }
+}

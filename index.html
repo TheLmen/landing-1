@@ -6,90 +6,120 @@
   <title>MM Export Brokerage</title>
   <meta name="description" content="Export brokerage & sourcing from Argentina. Supplier matching, documentation workflow, and logistics coordination." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="form-validation.css" />
+  <link rel="stylesheet" href="mobile-menu.css" />
 </head>
 
 <body>
-  <header class="top">
-    <div class="brand">
-      <div class="brand__name">MM Export Brokerage</div>
-      <div class="brand__tag">
-        <span data-i18n="en">Sourcing & export coordination</span>
-        <span data-i18n="es">Sourcing y coordinación de exportaciones</span>
+  <!-- ══ HEADER ══ -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="brand">
+        <div class="brand__name">MM Export Brokerage</div>
+        <div class="brand__tag">
+          <span data-i18n="en">Sourcing &amp; export coordination</span>
+          <span data-i18n="es">Sourcing y coordinaci&oacute;n de exportaciones</span>
+        </div>
       </div>
-    </div>
 
-    <nav class="nav">
-      <a href="#services"><span data-i18n="en">Services</span><span data-i18n="es">Servicios</span></a>
-      <a href="#industries"><span data-i18n="en">Industries</span><span data-i18n="es">Industrias</span></a>
-      <a href="#process"><span data-i18n="en">How it works</span><span data-i18n="es">Proceso</span></a>
-      <a href="#quality"><span data-i18n="en">Quality</span><span data-i18n="es">Calidad</span></a>
-      <a href="#contact"><span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></a>
-    </nav>
+      <!-- HAMBURGER BUTTON -->
+      <button id="menuToggle" class="menu-toggle" type="button" aria-label="Toggle menu">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
 
-    <div class="top__actions">
-      <button id="langToggle" class="lang" type="button" aria-label="Toggle language">EN</button>
-      <a class="btn btn--small" href="mailto:sales.com?subject=RFQ%20-%20MM%20Export%20Brokerage&body=Product%2FSpec%3A%0APackaging%3A%0AVolume%3A%0ADestination%3A%0AIncoterm%20(FOB%2FCIF)%3A%0ACompliance%20requirements%3A">
-        <span data-i18n="en">Request a quote</span><span data-i18n="es">Pedir cotización</span>
-      </a>
+      <nav class="nav">
+        <a href="#services"><span data-i18n="en">Services</span><span data-i18n="es">Servicios</span></a>
+        <a href="#industries"><span data-i18n="en">Industries</span><span data-i18n="es">Industrias</span></a>
+        <a href="#process"><span data-i18n="en">How it works</span><span data-i18n="es">Proceso</span></a>
+        <a href="#quality"><span data-i18n="en">Quality</span><span data-i18n="es">Calidad</span></a>
+        <a href="#contact"><span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></a>
+        
+        <!-- Mobile menu extras -->
+        <div class="nav-divider"></div>
+        <div class="nav-cta">
+          <a class="btn" href="#contact">
+            <span data-i18n="en">Request a quote</span>
+            <span data-i18n="es">Pedir cotizaci&oacute;n</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Toggle language">EN</button>
+        <a class="btn btn--sm" href="#contact">
+          <span data-i18n="en">Request a quote</span>
+          <span data-i18n="es">Pedir cotizaci&oacute;n</span>
+        </a>
+      </div>
     </div>
   </header>
 
-  <main class="wrap">
+  <!-- ══ MAIN ══ -->
+  <main class="container">
+
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero__content">
         <h1 class="h1">
-          <span data-i18n="en">Export Brokerage & Sourcing from Argentina</span>
-          <span data-i18n="es">Broker de exportación y sourcing desde Argentina</span>
+          <span data-i18n="en">Source &amp; export from Argentina with full documentation</span>
+          <span data-i18n="es">Export&aacute; desde Argentina con documentaci&oacute;n completa</span>
         </h1>
 
-        <p class="lead">
-          <span data-i18n="en">
-            We connect international buyers with vetted producers and coordinate documentation, quality workflow, and logistics end-to-end.
-          </span>
-          <span data-i18n="es">
-            Conectamos compradores internacionales con productores validados y coordinamos documentación, proceso de calidad y logística de punta a punta.
-          </span>
+        <p class="hero__lead">
+          <span data-i18n="en">We match you with vetted suppliers, coordinate compliance documentation, and deliver structured offers with clear terms. Fast response, end-to-end.</span>
+          <span data-i18n="es">Te conectamos con proveedores validados, coordinamos documentaci&oacute;n de cumplimiento y entregamos ofertas estructuradas con condiciones claras. Respuesta r&aacute;pida, de punta a punta.</span>
         </p>
 
-        <div class="meta">
-          <span class="pill"><span data-i18n="en">Based in Mendoza, Argentina</span><span data-i18n="es">Base: Mendoza, Argentina</span></span>
-          <span class="pill"><span data-i18n="en">Fast response</span><span data-i18n="es">Respuesta rápida</span></span>
-          <span class="pill"><span data-i18n="en">Documentation-first</span><span data-i18n="es">Documentación primero</span></span>
+        <div class="hero__pills">
+          <span class="pill"><span data-i18n="en">Mendoza, Argentina</span><span data-i18n="es">Mendoza, Argentina</span></span>
+          <span class="pill"><span data-i18n="en">Fast response</span><span data-i18n="es">Respuesta r&aacute;pida</span></span>
+          <span class="pill"><span data-i18n="en">Documentation-first</span><span data-i18n="es">Documentaci&oacute;n primero</span></span>
         </div>
 
-        <div class="cta">
-          <a class="btn" href="mailto:sales@mmexportbrokerage.com?subject=RFQ%20-%20MM%20Export%20Brokerage&body=Product%2FSpec%3A%0APackaging%3A%0AVolume%3A%0ADestination%3A%0AIncoterm%20(FOB%2FCIF)%3A%0ACompliance%20requirements%3A">
-            <span data-i18n="en">Request a quote (Email)</span>
-            <span data-i18n="es">Pedir cotización (Email)</span>
+        <div class="hero__cta">
+          <a class="btn" href="#contact">
+            <span data-i18n="en">Request a quote</span>
+            <span data-i18n="es">Pedir cotizaci&oacute;n</span>
           </a>
-
-          <a class="btn secondary" href="https://wa.me/5492614606949?text=Hi%20MM%20Export%20Brokerage%20%E2%80%94%20I%27d%20like%20a%20quote.%0AProduct%2FSpec%3A%0APackaging%3A%0AVolume%3A%0ADestination%3A%0AIncoterm%20(FOB%2FCIF)%3A" target="_blank" rel="noreferrer">
+          <a class="btn btn--sec" href="https://wa.me/5492614606949?text=Hi%20MM%20Export%20Brokerage%20%E2%80%94%20I%27d%20like%20a%20quote.%0AProduct%2FSpec%3A%0APackaging%3A%0AVolume%3A%0ADestination%3A%0AIncoterm%20(FOB%2FCIF)%3A" target="_blank" rel="noreferrer">
             WhatsApp
           </a>
         </div>
 
-        <p class="note">
-          <span data-i18n="en">
-            Send your specs and destination— we’ll confirm feasibility and return a structured offer with lead times and documentation.
-          </span>
-          <span data-i18n="es">
-            Enviá especificaciones y destino— confirmamos factibilidad y devolvemos una oferta estructurada con plazos y documentación.
-          </span>
+        <p class="hero__note">
+          <span data-i18n="en">Send specs and destination &mdash; we confirm feasibility and return a structured offer.</span>
+          <span data-i18n="es">Envi&aacute; especificaciones y destino &mdash; confirmamos factibilidad y devolvemos una oferta estructurada.</span>
         </p>
       </div>
 
-      <div class="hero__card card">
-        <h2 class="h2"><span data-i18n="en">What you’ll get</span><span data-i18n="es">Qué recibís</span></h2>
-        <ul class="list">
-          <li><span data-i18n="en">Supplier matching for your spec + volume</span><span data-i18n="es">Match de proveedor según especificación + volumen</span></li>
-          <li><span data-i18n="en">Documentation workflow (COA/specs/packaging)</span><span data-i18n="es">Flujo documental (COA/fichas/empaque)</span></li>
-          <li><span data-i18n="en">Clear quotation: MOQ, lead time, Incoterms</span><span data-i18n="es">Cotización clara: MOQ, lead time, Incoterms</span></li>
-          <li><span data-i18n="en">Coordination until shipment milestone</span><span data-i18n="es">Coordinación hasta hitos de envío</span></li>
+      <div class="hero__card card card--flat">
+        <h2 class="h2">
+          <span data-i18n="en">What you get</span>
+          <span data-i18n="es">Qu&eacute; recib&iacute;s</span>
+        </h2>
+        <ul class="card__list">
+          <li>
+            <svg class="icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4.5L6.5 11 3 7.5"/></svg>
+            <span><span data-i18n="en">Supplier matched to your spec + volume</span><span data-i18n="es">Proveedor alineado a tu especificaci&oacute;n + volumen</span></span>
+          </li>
+          <li>
+            <svg class="icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4.5L6.5 11 3 7.5"/></svg>
+            <span><span data-i18n="en">Documentation: COA, tech sheet, packaging</span><span data-i18n="es">Documentaci&oacute;n: COA, ficha t&eacute;cnica, empaque</span></span>
+          </li>
+          <li>
+            <svg class="icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4.5L6.5 11 3 7.5"/></svg>
+            <span><span data-i18n="en">Clear quote: MOQ, lead time, Incoterms</span><span data-i18n="es">Cotizaci&oacute;n clara: MOQ, lead time, Incoterms</span></span>
+          </li>
+          <li>
+            <svg class="icon-check" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4.5L6.5 11 3 7.5"/></svg>
+            <span><span data-i18n="en">Coordination through shipment milestones</span><span data-i18n="es">Coordinaci&oacute;n por hitos hasta el env&iacute;o</span></span>
+          </li>
         </ul>
-        <div class="mini">
-          <span data-i18n="en">Typical Incoterms:</span><span data-i18n="es">Incoterms típicos:</span>
-          <strong>FOB</strong> · <strong>CIF</strong>
+        <div class="card__footer">
+          <span data-i18n="en">Typical Incoterms:</span><span data-i18n="es">Incoterms t&iacute;picos:</span>
+          <strong>FOB</strong> &middot; <strong>CIF</strong>
         </div>
       </div>
     </section>
@@ -98,28 +128,47 @@
     <section id="services" class="section">
       <div class="section__head">
         <h2 class="h2"><span data-i18n="en">Services</span><span data-i18n="es">Servicios</span></h2>
-        <p class="sub"><span data-i18n="en">A lean workflow built to reduce friction and speed up decision-making.</span><span data-i18n="es">Un flujo ágil para reducir fricción y acelerar decisiones.</span></p>
+        <p class="section__sub">
+          <span data-i18n="en">A lean workflow to reduce friction and accelerate decisions.</span>
+          <span data-i18n="es">Un flujo &aacute;gil para reducir fricci&oacute;n y acelerar decisiones.</span>
+        </p>
       </div>
 
-      <div class="grid">
-        <article class="card">
-          <h3 class="h3"><span data-i18n="en">Sourcing & Supplier Matching</span><span data-i18n="es">Sourcing y selección de proveedores</span></h3>
-          <p><span data-i18n="en">We match your specs, volume, and destination requirements with the right producer.</span><span data-i18n="es">Matcheamos especificaciones, volumen y destino con el productor correcto.</span></p>
+      <div class="grid grid--2">
+        <!-- Sourcing -->
+        <article class="card svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3 class="h3"><span data-i18n="en">Sourcing &amp; supplier matching</span><span data-i18n="es">Sourcing y selecci&oacute;n de proveedores</span></h3>
+          <p><span data-i18n="en">We identify the right supplier for your specs, volume, and destination.</span><span data-i18n="es">Identificamos el proveedor adecuado para tu especificaci&oacute;n, volumen y destino.</span></p>
         </article>
 
-        <article class="card">
-          <h3 class="h3"><span data-i18n="en">Documentation & Compliance</span><span data-i18n="es">Documentación y cumplimiento</span></h3>
-          <p><span data-i18n="en">We coordinate the documents you need to evaluate compliance before moving forward.</span><span data-i18n="es">Coordinamos la documentación necesaria para validar cumplimiento antes de avanzar.</span></p>
+        <!-- Documentation -->
+        <article class="card svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="h3"><span data-i18n="en">Documentation &amp; compliance</span><span data-i18n="es">Documentaci&oacute;n y cumplimiento</span></h3>
+          <p><span data-i18n="en">We coordinate the compliance documents you need before moving forward.</span><span data-i18n="es">Coordinamos la documentaci&oacute;n de cumplimiento necesaria antes de avanzar.</span></p>
         </article>
 
-        <article class="card">
-          <h3 class="h3"><span data-i18n="en">Quotation & Terms</span><span data-i18n="es">Cotización y condiciones</span></h3>
-          <p><span data-i18n="en">Structured offers with specs, packaging, MOQ, lead time, and Incoterms (FOB/CIF).</span><span data-i18n="es">Ofertas estructuradas con especificación, empaque, MOQ, lead time e Incoterms (FOB/CIF).</span></p>
+        <!-- Quotation -->
+        <article class="card svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+          </div>
+          <h3 class="h3"><span data-i18n="en">Quotation &amp; terms</span><span data-i18n="es">Cotizaci&oacute;n y condiciones</span></h3>
+          <p><span data-i18n="en">We structure clear offers with specs, packaging, MOQ, lead time, and Incoterms.</span><span data-i18n="es">Estructuramos ofertas claras con especificaci&oacute;n, empaque, MOQ, lead time e Incoterms.</span></p>
         </article>
 
-        <article class="card">
-          <h3 class="h3"><span data-i18n="en">Logistics Coordination</span><span data-i18n="es">Coordinación logística</span></h3>
-          <p><span data-i18n="en">We support shipment planning and timeline follow-ups based on agreed terms.</span><span data-i18n="es">Acompañamos la planificación del envío y el seguimiento de hitos según condiciones acordadas.</span></p>
+        <!-- Logistics -->
+        <article class="card svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="h3"><span data-i18n="en">Logistics coordination</span><span data-i18n="es">Coordinaci&oacute;n log&iacute;stica</span></h3>
+          <p><span data-i18n="en">We support shipment planning and milestone follow-ups on agreed terms.</span><span data-i18n="es">Acompa&ntilde;amos la planificaci&oacute;n del env&iacute;o y el seguimiento de hitos acordados.</span></p>
         </article>
       </div>
     </section>
@@ -127,70 +176,85 @@
     <!-- INDUSTRIES -->
     <section id="industries" class="section">
       <div class="section__head">
-        <h2 class="h2"><span data-i18n="en">Industries & Categories</span><span data-i18n="es">Industrias y categorías</span></h2>
-        <p class="sub"><span data-i18n="en">We operate as a broker—category depends on supplier fit and feasibility.</span><span data-i18n="es">Operamos como broker—la categoría depende del encaje del proveedor y la factibilidad.</span></p>
+        <h2 class="h2"><span data-i18n="en">Industries &amp; categories</span><span data-i18n="es">Industrias y categor&iacute;as</span></h2>
+        <p class="section__sub">
+          <span data-i18n="en">We operate as a broker &mdash; category depends on supplier fit and feasibility.</span>
+          <span data-i18n="es">Operamos como broker &mdash; la categor&iacute;a depende del encaje del proveedor y la factibilidad.</span>
+        </p>
       </div>
 
       <div class="grid grid--3">
-        <article class="card">
-          <h3 class="h3"><span data-i18n="en">Food ingredients & additives</span><span data-i18n="es">Ingredientes y aditivos alimentarios</span></h3>
-          <p><span data-i18n="en">Case-by-case depending on specs and destination requirements.</span><span data-i18n="es">Caso por caso según especificación y requisitos del destino.</span></p>
+        <!-- Food -->
+        <article class="card svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-3.5 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+          </div>
+          <h3 class="h3"><span data-i18n="en">Food ingredients &amp; additives</span><span data-i18n="es">Ingredientes y aditivos alimentarios</span></h3>
+          <p><span data-i18n="en">Case-by-case depending on specs and destination requirements.</span><span data-i18n="es">Caso por caso seg&uacute;n especificaci&oacute;n y requisitos del destino.</span></p>
         </article>
 
-        <article class="card">
-          <h3 class="h3"><span data-i18n="en">Wine derivatives & tartaric derivatives</span><span data-i18n="es">Derivados del vino y derivados tartáricos</span></h3>
-          <p><span data-i18n="en">We can coordinate documentation workflows and structured offers.</span><span data-i18n="es">Podemos coordinar flujos documentales y ofertas estructuradas.</span></p>
+        <!-- Wine -->
+        <article class="card svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h3 class="h3"><span data-i18n="en">Wine &amp; tartaric derivatives</span><span data-i18n="es">Derivados del vino y tart&aacute;ricos</span></h3>
+          <p><span data-i18n="en">Documentation workflows and structured offers available.</span><span data-i18n="es">Flujos documentales y ofertas estructuradas disponibles.</span></p>
         </article>
 
-        <article class="card">
+        <!-- Industrial -->
+        <article class="card svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
           <h3 class="h3"><span data-i18n="en">Industrial inputs</span><span data-i18n="es">Insumos industriales</span></h3>
           <p><span data-i18n="en">Feasibility depends on supplier availability and compliance scope.</span><span data-i18n="es">La factibilidad depende de disponibilidad y alcance de cumplimiento.</span></p>
         </article>
       </div>
 
       <div class="callout">
-        <span data-i18n="en">If your product isn’t listed, send your specs and we’ll confirm feasibility.</span>
-        <span data-i18n="es">Si tu producto no está listado, enviá especificaciones y confirmamos factibilidad.</span>
+        <span data-i18n="en">Product not listed? Send your specs and we'll confirm feasibility.</span>
+        <span data-i18n="es">&iquest;Tu producto no est&aacute; listado? Envi&aacute; especificaciones y confirmamos factibilidad.</span>
       </div>
     </section>
 
     <!-- PROCESS -->
     <section id="process" class="section">
       <div class="section__head">
-        <h2 class="h2"><span data-i18n="en">How it works</span><span data-i18n="es">Cómo trabajamos</span></h2>
-        <p class="sub"><span data-i18n="en">A simple process designed for clarity and speed.</span><span data-i18n="es">Un proceso simple diseñado para claridad y velocidad.</span></p>
+        <h2 class="h2"><span data-i18n="en">How it works</span><span data-i18n="es">C&oacute;mo trabajamos</span></h2>
+        <p class="section__sub">
+          <span data-i18n="en">A simple process designed for clarity and speed.</span>
+          <span data-i18n="es">Un proceso simple dise&ntilde;ado para claridad y velocidad.</span>
+        </p>
       </div>
 
       <ol class="steps">
-        <li class="step card">
+        <li class="step">
           <div class="step__n">1</div>
           <div class="step__c">
-            <h3 class="h3"><span data-i18n="en">Send your specs</span><span data-i18n="es">Enviá tus especificaciones</span></h3>
-            <p><span data-i18n="en">Product/spec, packaging, estimated volume, destination, and Incoterm preference.</span><span data-i18n="es">Producto/especificación, empaque, volumen estimado, destino y preferencia de Incoterm.</span></p>
+            <h3 class="h3"><span data-i18n="en">Send your specs</span><span data-i18n="es">Envi&aacute; tus especificaciones</span></h3>
+            <p><span data-i18n="en">Product, packaging, volume, destination, and Incoterm preference.</span><span data-i18n="es">Producto, empaque, volumen, destino y preferencia de Incoterm.</span></p>
           </div>
         </li>
-
-        <li class="step card">
+        <li class="step">
           <div class="step__n">2</div>
           <div class="step__c">
             <h3 class="h3"><span data-i18n="en">We validate feasibility</span><span data-i18n="es">Validamos factibilidad</span></h3>
-            <p><span data-i18n="en">We confirm supplier fit, documentation availability, and lead time.</span><span data-i18n="es">Confirmamos encaje del proveedor, documentación disponible y plazos.</span></p>
+            <p><span data-i18n="en">Supplier match, documentation check, and lead time estimate.</span><span data-i18n="es">Match de proveedor, revisi&oacute;n documental y estimaci&oacute;n de plazos.</span></p>
           </div>
         </li>
-
-        <li class="step card">
+        <li class="step">
           <div class="step__n">3</div>
           <div class="step__c">
-            <h3 class="h3"><span data-i18n="en">You receive a structured offer</span><span data-i18n="es">Recibís una oferta estructurada</span></h3>
-            <p><span data-i18n="en">Quote with MOQ, lead time, packaging details, Incoterms, and documents list.</span><span data-i18n="es">Cotización con MOQ, lead time, detalle de empaque, Incoterms y lista de documentos.</span></p>
+            <h3 class="h3"><span data-i18n="en">Structured offer</span><span data-i18n="es">Oferta estructurada</span></h3>
+            <p><span data-i18n="en">Quote with MOQ, lead time, packaging, Incoterms, and documents.</span><span data-i18n="es">Cotizaci&oacute;n con MOQ, lead time, empaque, Incoterms y documentos.</span></p>
           </div>
         </li>
-
-        <li class="step card">
+        <li class="step">
           <div class="step__n">4</div>
           <div class="step__c">
-            <h3 class="h3"><span data-i18n="en">Coordination until shipment</span><span data-i18n="es">Coordinación hasta el envío</span></h3>
-            <p><span data-i18n="en">We support alignment through milestones: production, documents, and shipping timeline.</span><span data-i18n="es">Acompañamos la alineación por hitos: producción, documentos y cronograma de envío.</span></p>
+            <h3 class="h3"><span data-i18n="en">Coordination until shipment</span><span data-i18n="es">Coordinaci&oacute;n hasta env&iacute;o</span></h3>
+            <p><span data-i18n="en">Milestone alignment: production, documents, and shipping.</span><span data-i18n="es">Alineaci&oacute;n por hitos: producci&oacute;n, documentos y env&iacute;o.</span></p>
           </div>
         </li>
       </ol>
@@ -199,98 +263,252 @@
     <!-- QUALITY -->
     <section id="quality" class="section">
       <div class="section__head">
-        <h2 class="h2"><span data-i18n="en">Quality & documentation</span><span data-i18n="es">Calidad y documentación</span></h2>
-        <p class="sub"><span data-i18n="en">We prioritize documentation clarity and traceability workflows where applicable.</span><span data-i18n="es">Priorizamos claridad documental y trazabilidad cuando aplica.</span></p>
+        <h2 class="h2"><span data-i18n="en">Quality &amp; documentation</span><span data-i18n="es">Calidad y documentaci&oacute;n</span></h2>
+        <p class="section__sub">
+          <span data-i18n="en">We prioritize documentation clarity and traceability where applicable.</span>
+          <span data-i18n="es">Priorizamos claridad documental y trazabilidad cuando aplica.</span>
+        </p>
       </div>
 
-      <div class="grid grid--2">
-        <article class="card">
-          <h3 class="h3"><span data-i18n="en">Typical information available</span><span data-i18n="es">Información típica disponible</span></h3>
-          <ul class="list">
-            <li><span data-i18n="en">Technical Data Sheet / Specification</span><span data-i18n="es">Ficha técnica / Especificación</span></li>
-            <li><span data-i18n="en">COA per lot (when applicable)</span><span data-i18n="es">COA por lote (cuando aplica)</span></li>
-            <li><span data-i18n="en">Packaging & labeling details</span><span data-i18n="es">Empaque y rotulado</span></li>
-            <li><span data-i18n="en">Origin and logistics details</span><span data-i18n="es">Origen y detalles logísticos</span></li>
-            <li><span data-i18n="en">Additional documents depending on destination</span><span data-i18n="es">Documentos adicionales según destino</span></li>
-          </ul>
-        </article>
+      <div class="trust-grid">
+        <!-- Traceability -->
+        <div class="trust-block">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <div>
+            <h3 class="h3"><span data-i18n="en">Lot traceability</span><span data-i18n="es">Trazabilidad por lote</span></h3>
+            <p><span data-i18n="en">When available from the supplier, per product and lot.</span><span data-i18n="es">Cuando est&aacute; disponible del proveedor, por producto y lote.</span></p>
+          </div>
+        </div>
 
-        <article class="card">
-          <h3 class="h3"><span data-i18n="en">What we need from you</span><span data-i18n="es">Qué necesitamos de vos</span></h3>
-          <ul class="list">
-            <li><span data-i18n="en">Target spec or standard</span><span data-i18n="es">Especificación objetivo o estándar</span></li>
-            <li><span data-i18n="en">Packaging format and labeling needs</span><span data-i18n="es">Formato de empaque y rotulado</span></li>
-            <li><span data-i18n="en">Estimated volume and frequency</span><span data-i18n="es">Volumen estimado y frecuencia</span></li>
-            <li><span data-i18n="en">Destination + preferred Incoterm</span><span data-i18n="es">Destino + Incoterm preferido</span></li>
-            <li><span data-i18n="en">Mandatory compliance requirements</span><span data-i18n="es">Requisitos obligatorios de cumplimiento</span></li>
+        <!-- COA -->
+        <div class="trust-block">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h3 class="h3"><span data-i18n="en">COA &amp; technical sheets</span><span data-i18n="es">COA y fichas t&eacute;cnicas</span></h3>
+            <p><span data-i18n="en">Certificate of Analysis and technical data per product.</span><span data-i18n="es">Certificado de an&aacute;lisis y ficha t&eacute;cnica por producto.</span></p>
+          </div>
+        </div>
+
+        <!-- Packaging -->
+        <div class="trust-block">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div>
+            <h3 class="h3"><span data-i18n="en">Packaging &amp; labeling</span><span data-i18n="es">Empaque y rotulado</span></h3>
+            <p><span data-i18n="en">Details according to destination requirements.</span><span data-i18n="es">Detalles seg&uacute;n requisitos del destino.</span></p>
+          </div>
+        </div>
+
+        <!-- Compliance -->
+        <div class="trust-block">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3 class="h3"><span data-i18n="en">Regulatory compliance</span><span data-i18n="es">Cumplimiento regulatorio</span></h3>
+            <p><span data-i18n="en">Scope depending on product and destination market.</span><span data-i18n="es">Alcance seg&uacute;n producto y mercado de destino.</span></p>
+          </div>
+        </div>
+
+        <!-- Origin -->
+        <div class="trust-block">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h3 class="h3"><span data-i18n="en">Origin documentation</span><span data-i18n="es">Documentaci&oacute;n de origen</span></h3>
+            <p><span data-i18n="en">Certificates and related docs when applicable.</span><span data-i18n="es">Certificados y documentaci&oacute;n relacionada cuando aplica.</span></p>
+          </div>
+        </div>
+
+        <!-- Shipping docs -->
+        <div class="trust-block">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <h3 class="h3"><span data-i18n="en">Shipping documentation</span><span data-i18n="es">Documentaci&oacute;n de embarque</span></h3>
+            <p><span data-i18n="en">Logistics docs for the agreed terms and destination.</span><span data-i18n="es">Documentos log&iacute;sticos seg&uacute;n condiciones y destino acordados.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- What we need from you -->
+      <div class="quality-split">
+        <div class="card card--soft card--flat">
+          <h3 class="h3" style="margin-bottom:12px;">
+            <span data-i18n="en">What we need from you</span>
+            <span data-i18n="es">Qu&eacute; necesitamos de vos</span>
+          </h3>
+          <ul class="needs-list">
+            <li><span class="needs-dot"></span><span data-i18n="en">Target spec or standard</span><span data-i18n="es">Especificaci&oacute;n objetivo o est&aacute;ndar</span></li>
+            <li><span class="needs-dot"></span><span data-i18n="en">Packaging format and labeling needs</span><span data-i18n="es">Formato de empaque y rotulado</span></li>
+            <li><span class="needs-dot"></span><span data-i18n="en">Estimated volume and frequency</span><span data-i18n="es">Volumen estimado y frecuencia</span></li>
+            <li><span class="needs-dot"></span><span data-i18n="en">Destination + preferred Incoterm</span><span data-i18n="es">Destino + Incoterm preferido</span></li>
+            <li><span class="needs-dot"></span><span data-i18n="en">Mandatory compliance requirements</span><span data-i18n="es">Requisitos obligatorios de cumplimiento</span></li>
           </ul>
-        </article>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="section__head">
-        <h2 class="h2"><span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></h2>
-        <p class="sub"><span data-i18n="en">For a quote, email us your specs and destination. WhatsApp also available.</span><span data-i18n="es">Para cotizar, envianos especificaciones y destino por email. WhatsApp también disponible.</span></p>
+        <h2 class="h2"><span data-i18n="en">Request a quote</span><span data-i18n="es">Pedir cotizaci&oacute;n</span></h2>
+        <p class="section__sub">
+          <span data-i18n="en">Fill in your requirements and we'll get back to you with a structured offer.</span>
+          <span data-i18n="es">Complet&aacute; tus requisitos y te respondemos con una oferta estructurada.</span>
+        </p>
       </div>
 
-      <div class="contact card">
-        <div class="contact__left">
-          <div class="contact__row">
-            <div class="label">Email</div>
-            <a class="link" href="mailto:sales@mmexportbrokerage.com?subject=RFQ%20-%20MM%20Export%20Brokerage&body=Product%2FSpec%3A%0APackaging%3A%0AVolume%3A%0ADestination%3A%0AIncoterm%20(FOB%2FCIF)%3A%0ACompliance%20requirements%3A">
-              sales@mmexportbrokerage.com
-            </a>
+      <div class="contact-grid">
+        <!-- Form -->
+        <form id="rfqForm" class="form" novalidate>
+          <div class="form__row form__row--2">
+            <div class="form__group">
+              <label class="form__label" for="rfq-product">
+                <span data-i18n="en">Product *</span><span data-i18n="es">Producto *</span>
+              </label>
+              <input class="form__input" type="text" id="rfq-product" name="product" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="rfq-spec">
+                <span data-i18n="en">Specification / Standard</span><span data-i18n="es">Especificaci&oacute;n / Est&aacute;ndar</span>
+              </label>
+              <input class="form__input" type="text" id="rfq-spec" name="spec" />
+            </div>
           </div>
 
-          <div class="contact__row">
-            <div class="label">WhatsApp</div>
-            <a class="link" href="https://wa.me/5492614606949?text=Hi%20MM%20Export%20Brokerage%20%E2%80%94%20I%27d%20like%20a%20quote.%0AProduct%2FSpec%3A%0APackaging%3A%0AVolume%3A%0ADestination%3A%0AIncoterm%20(FOB%2FCIF)%3A" target="_blank" rel="noreferrer">
-              +54 9 2614 606949
-            </a>
+          <div class="form__row form__row--2">
+            <div class="form__group">
+              <label class="form__label" for="rfq-volume">
+                <span data-i18n="en">Estimated volume</span><span data-i18n="es">Volumen estimado</span>
+              </label>
+              <input class="form__input" type="text" id="rfq-volume" name="volume" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="rfq-destination">
+                <span data-i18n="en">Destination (country / port)</span><span data-i18n="es">Destino (pa&iacute;s / puerto)</span>
+              </label>
+              <input class="form__input" type="text" id="rfq-destination" name="destination" />
+            </div>
           </div>
 
-          <p class="small">
-            <span data-i18n="en">Tip: Include product/spec, packaging, volume, destination, and Incoterm.</span>
-            <span data-i18n="es">Tip: Incluí producto/especificación, empaque, volumen, destino e Incoterm.</span>
+          <div class="form__row form__row--2">
+            <div class="form__group">
+              <label class="form__label" for="rfq-incoterm">
+                <span data-i18n="en">Preferred Incoterm</span><span data-i18n="es">Incoterm preferido</span>
+              </label>
+              <select class="form__select" id="rfq-incoterm" name="incoterm">
+                <option value="">&mdash;</option>
+                <option value="FOB">FOB</option>
+                <option value="CIF">CIF</option>
+                <option value="EXW">EXW</option>
+                <option value="FCA">FCA</option>
+                <option value="CFR">CFR</option>
+                <option value="Other" data-en="To discuss" data-es="A consultar">To discuss</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="rfq-email">Email *</label>
+              <input class="form__input" type="email" id="rfq-email" name="email" required />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="rfq-whatsapp">
+              WhatsApp <span class="form__optional"><span data-i18n="en">(optional)</span><span data-i18n="es">(opcional)</span></span>
+            </label>
+            <input class="form__input" type="tel" id="rfq-whatsapp" name="whatsapp" placeholder="+54 9..." />
+          </div>
+
+          <div class="form__actions">
+            <button type="submit" class="btn" id="rfqEmail">
+              <span data-i18n="en">Send via Email</span><span data-i18n="es">Enviar por Email</span>
+            </button>
+            <button type="button" class="btn btn--sec" id="rfqWhatsApp">
+              <span data-i18n="en">Send via WhatsApp</span><span data-i18n="es">Enviar por WhatsApp</span>
+            </button>
+          </div>
+
+          <p class="form__privacy">
+            <span data-i18n="en">We use your data only to respond to this request.</span>
+            <span data-i18n="es">Usamos tus datos solo para responder esta solicitud.</span>
           </p>
-        </div>
+        </form>
 
-        <div class="contact__right">
-          <div class="mini card card--soft">
-            <h3 class="h3"><span data-i18n="en">RFQ template</span><span data-i18n="es">Plantilla de cotización</span></h3>
-            <pre class="rfq">Product/Spec:
+        <!-- Contact info -->
+        <div class="contact-info">
+          <div class="contact-info__row">
+            <div class="contact-info__label">Email</div>
+            <a class="contact-info__link" href="mailto:sales@mmexportbrokerage.com">sales@mmexportbrokerage.com</a>
+          </div>
+          <div class="contact-info__row">
+            <div class="contact-info__label">WhatsApp</div>
+            <a class="contact-info__link" href="https://wa.me/5492614606949" target="_blank" rel="noreferrer">+54 9 261 460 6949</a>
+          </div>
+          <p class="contact-info__tip">
+            <span data-i18n="en">Prefer to write directly? Include product, spec, volume, destination, and Incoterm in your message.</span>
+            <span data-i18n="es">&iquest;Prefer&iacute;s escribir directamente? Inclu&iacute; producto, especificaci&oacute;n, volumen, destino e Incoterm en tu mensaje.</span>
+          </p>
+
+          <div class="card card--soft card--flat">
+            <h3 class="h3" style="margin-bottom:8px;">
+              <span data-i18n="en">RFQ template</span><span data-i18n="es">Plantilla de cotizaci&oacute;n</span>
+            </h3>
+            <pre style="margin:0;padding:12px;border-radius:10px;border:1px solid var(--c-border-light);background:var(--c-bg);font-size:12px;overflow:auto;">Product/Spec:
 Packaging:
 Volume:
 Destination:
 Incoterm (FOB/CIF):
 Compliance requirements:</pre>
           </div>
-
-          <div class="cta cta--tight">
-            <a class="btn" href="mailto:sales@mmexportbrokerage.com?subject=RFQ%20-%20MM%20Export%20Brokerage&body=Product%2FSpec%3A%0APackaging%3A%0AVolume%3A%0ADestination%3A%0AIncoterm%20(FOB%2FCIF)%3A%0ACompliance%20requirements%3A">
-              <span data-i18n="en">Email RFQ</span><span data-i18n="es">Enviar RFQ</span>
-            </a>
-            <a class="btn secondary" href="https://wa.me/5492614606949?text=Hi%20MM%20Export%20Brokerage%20%E2%80%94%20I%27d%20like%20a%20quote.%0AProduct%2FSpec%3A%0APackaging%3A%0AVolume%3A%0ADestination%3A%0AIncoterm%20(FOB%2FCIF)%3A" target="_blank" rel="noreferrer">WhatsApp</a>
-          </div>
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="footer__line">
-        <strong>MM Export Brokerage</strong>
-        <span class="muted">—</span>
-        <span class="muted">
-          <span data-i18n="en">Sourcing & export coordination from Argentina.</span>
-          <span data-i18n="es">Sourcing y coordinación de exportaciones desde Argentina.</span>
-        </span>
-      </div>
-      <div class="footer__line muted">© <span id="year"></span></div>
-    </footer>
   </main>
 
-  <script src="script.js?v=3"></script>
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">MM Export Brokerage</div>
+        <div class="footer__brand-desc">
+          <span data-i18n="en">Sourcing and export coordination from Argentina. Supplier matching, documentation, and logistics end-to-end.</span>
+          <span data-i18n="es">Sourcing y coordinaci&oacute;n de exportaciones desde Argentina. Selecci&oacute;n de proveedores, documentaci&oacute;n y log&iacute;stica de punta a punta.</span>
+        </div>
+      </div>
+      <div class="footer__right">
+        <nav class="footer__nav">
+          <a href="#services"><span data-i18n="en">Services</span><span data-i18n="es">Servicios</span></a>
+          <a href="#industries"><span data-i18n="en">Industries</span><span data-i18n="es">Industrias</span></a>
+          <a href="#process"><span data-i18n="en">Process</span><span data-i18n="es">Proceso</span></a>
+          <a href="#quality"><span data-i18n="en">Quality</span><span data-i18n="es">Calidad</span></a>
+          <a href="#contact"><span data-i18n="en">Contact</span><span data-i18n="es">Contacto</span></a>
+        </nav>
+        <div class="footer__contact">
+          <a href="mailto:sales@mmexportbrokerage.com">sales@mmexportbrokerage.com</a>
+          <a href="https://wa.me/5492614606949" target="_blank" rel="noreferrer">+54 9 261 460 6949</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; <span id="year"></span> MM Export Brokerage</span>
+      <span>
+        <span data-i18n="en">Based in Mendoza, Argentina</span>
+        <span data-i18n="es">Base: Mendoza, Argentina</span>
+      </span>
+    </div>
+  </footer>
+
+  <!-- OVERLAY (for mobile menu) -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <script src="script.js?v=5"></script>
 </body>
 </html>
