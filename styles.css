@@ -1061,6 +1061,6 @@ textarea:focus-visible {
 /* ✅ HERO — alinear "Exportá..." con "Qué recibís" subiendo el bloque izquierdo */
 @media (min-width: 961px){
   .hero > :first-child{
-    margin-top: -48px; /* ajustá: -8px / -12px / -14px según tu ojo */
+    margin-top: -34px; /* ajustá: -8px / -12px / -14px según tu ojo */
   }
 }
