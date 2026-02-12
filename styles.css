@@ -158,13 +158,13 @@ body {
   color: var(--c-text-light);
   text-transform: uppercase;
   letter-spacing: .10em;
-  line-height: 1.1;
+  line-height: 1.15;
   margin-top: 2px;
 
-  max-width: 360px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  max-width: 280px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 .nav { 
