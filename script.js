@@ -412,6 +412,77 @@ WhatsApp: ${data.whatsapp || 'N/A'}
   });
 
   // ═══════════════════════════════════════════════════════════
+  // Scroll Animations
+  // ═══════════════════════════════════════════════════════════
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, observerOptions);
+
+  // Observe all sections and cards
+  document.querySelectorAll(".section, .card, .step").forEach(el => {
+    el.classList.add("fade-in");
+    observer.observe(el);
+  });
+
+  // ═══════════════════════════════════════════════════════════
+  // Animated Counters for Stats
+  // ═══════════════════════════════════════════════════════════
+  function animateCounter(element, target, suffix = "") {
+    let current = 0;
+    const increment = target / 50;
+    const duration = 2000;
+    const stepTime = duration / 50;
+
+    const counter = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        element.textContent = target + suffix;
+        clearInterval(counter);
+      } else {
+        element.textContent = Math.floor(current) + suffix;
+      }
+    }, stepTime);
+  }
+
+  // Observe stats for counter animation
+  const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    const number = entry.target.querySelector(".stat__number");
+    if (!number) {
+      statsObserver.unobserve(entry.target);
+      return;
+    }
+
+    const targetRaw = number.dataset.target;
+    const target = parseInt(targetRaw, 10);
+    if (!Number.isFinite(target)) {
+      // Si falta data-target o es inválido, no animamos para evitar NaN
+      statsObserver.unobserve(entry.target);
+      return;
+    }
+
+    const suffix = number.dataset.suffix || "";
+    animateCounter(number, target, suffix);
+    statsObserver.unobserve(entry.target);
+  });
+}, { threshold: 0.5 });
+
+  document.querySelectorAll(".stat").forEach(stat => {
+    statsObserver.observe(stat);
+  });
+
+  // ═══════════════════════════════════════════════════════════
   // Initialize
   // ═══════════════════════════════════════════════════════════
   patchContactLinks();
