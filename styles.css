@@ -151,8 +151,14 @@ body {
   color: var(--c-dark);
   white-space: nowrap;
 }
-.brand__tag { 
-  display: none; /* Ocultar tagline en header */
+.brand__tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--c-text-light);
+  text-transform: uppercase;
+  letter-spacing: .10em;
+  line-height: 1.1;
+  margin-top: 2px;
 }
 
 .nav { 
@@ -835,6 +841,10 @@ textarea:focus-visible {
   .nav { 
     display: none; 
   }
+
+  .brand__tag {
+    display: none;
+  }  
 }
 
 @media (max-width: 640px) {
